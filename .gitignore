@@ -1,0 +1,16 @@
+node_modules/
+npm-debug.log*
+.env
+.env.local
+dist/
+build/
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.log
+backend/uploads/
+.DS_Store

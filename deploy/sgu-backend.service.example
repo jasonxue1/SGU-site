@@ -1,0 +1,21 @@
+# 复制到 /etc/systemd/system/sgu-backend.service 并修改路径与用户
+# sudo cp deploy/sgu-backend.service.example /etc/systemd/system/sgu-backend.service
+#
+# 说明：WorkingDirectory 必须为 backend 目录（内含 .env、dist、uploads）
+# 生产环境由本进程同时提供 API 与前端静态页时，请先执行 deploy/build-production.sh
+
+[Unit]
+Description=SGU Server (API + optional static frontend)
+After=network.target mysql.service
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/var/www/sgu-server.xin/backend
+Environment=NODE_ENV=production
+ExecStart=/usr/bin/node dist/index.js
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
