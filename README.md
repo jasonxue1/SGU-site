@@ -125,8 +125,8 @@ NODE_ENV=production npm start
 
 ## 许可证
 
-本仓库**尚未**包含 `LICENSE` 文件时，默认**不**自动授予使用许可。若你计划开源，请自行添加 [Choose a License](https://choosealicense.com/) 上合适的许可证，并更新本段说明。
+本项目在 [**GNU 通用公共许可证第 3 版**](https://www.gnu.org/licenses/gpl-3.0.html)（[GPL-3.0-only](https://spdx.org/licenses/GPL-3.0-only)）下发布，完整法律文本见仓库根目录 [`LICENSE`](LICENSE)。
 
----
+> 分发、修改本软件时须遵守 GPL-3.0，包括向接收者提供相应源代码等义务。若你同时分发依赖的 `node_modules` 等第三方库，请一并遵守其各自许可条款。
 
-*第三方库归各自所有；若对外展示，请同时遵守相关依赖的许可证要求。*
+*第三方库版权归各自作者；本说明不构成法律建议。*
