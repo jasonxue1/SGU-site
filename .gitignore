@@ -1,0 +1,28 @@
+node_modules/
+npm-debug.log*
+# 环境变量与密钥（勿提交真实 .env）
+.env
+.env.*
+!.env.example
+!**/.env.example
+.env.local
+dist/
+build/
+# TypeScript
+*.tsbuildinfo
+# 工具与 IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.log
+# 运行时上传
+backend/uploads/
+.DS_Store
+# 证书与私钥
+*.pem
+*.key
+!*.key.example

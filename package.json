@@ -1,0 +1,12 @@
+{
+  "name": "sgu-server-site",
+  "private": true,
+  "description": "根目录脚本：便于在服务器（含宝塔）一次性安装依赖并构建前后端",
+  "scripts": {
+    "install:all": "npm install --prefix frontend && npm install --prefix backend",
+    "build:frontend": "npm run build --prefix frontend",
+    "build:backend": "npm run build --prefix backend",
+    "build": "npm run build:frontend && npm run build:backend",
+    "deploy:build": "npm run install:all && npm run build"
+  }
+}
