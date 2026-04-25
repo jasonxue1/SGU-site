@@ -40,7 +40,7 @@ npm run install:all
 
 ### 2. 配置环境变量
 
-在 `backend/` 下创建 `.env`（**勿提交**到版本库），至少包含：
+在 `backend/` 下创建 `.env`（**勿提交**到版本库；可先复制 `backend/.env.example` 为 `.env` 再填写），至少包含：
 
 | 变量 | 说明 |
 |------|------|
