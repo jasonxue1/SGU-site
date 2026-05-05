@@ -1,12 +1,28 @@
 {
-  "name": "sgu-server-site",
+  "name": "sgu-server-frontend",
   "private": true,
-  "description": "根目录脚本：便于在服务器（含宝塔）一次性安装依赖并构建前后端",
+  "version": "1.0.0",
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
   "scripts": {
-    "install:all": "npm install --prefix frontend && npm install --prefix backend",
-    "build:frontend": "npm run build --prefix frontend",
-    "build:backend": "npm run build --prefix backend",
-    "build": "npm run build:frontend && npm run build:backend",
-    "deploy:build": "npm run install:all && npm run build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-icons": "^5.6.0",
+    "react-router-dom": "^7.15.0",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.4.1",
+    "prettier": "^3.6.2"
   }
 }
